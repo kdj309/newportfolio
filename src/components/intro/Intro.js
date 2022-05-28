@@ -23,7 +23,7 @@ export default function Intro() {
                     </h2>
                 </div>
             </div>
-            <button className='btn' id='downarrow'><FiArrowDownCircle fontSize={50} color='#ff3f2f' /></button>
+            <a href='#ProjectSection' className='btn' id='downarrow'><FiArrowDownCircle fontSize={50} color='#ff3f2f' /></a>
         </>
 
     )

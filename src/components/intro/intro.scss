@@ -83,6 +83,7 @@
     color: $primarycolor;
     border: none;
     outline: none;
+    text-decoration: none;
 
     @include breakdownpoint {
         left: 85%;
