@@ -1,0 +1,166 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.43em 0.31em;
+
+    .HamburgerIconDiv {
+        display: none;
+        padding: 0.43em;
+
+        @include tablayout {
+            display: block;
+        }
+    }
+
+    .leftnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        h3 {
+            margin: 5px;
+            color: white;
+        }
+    }
+
+    .rightnav {
+        @include tablayout {
+            display: none;
+        }
+
+        ul {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+
+
+
+            li {
+                padding: 0.43em 0.56em;
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 0.43em 0.56em;
+                    cursor: pointer;
+
+
+                }
+
+                &:hover {
+                    border-bottom: 2px solid $primarycolor;
+                }
+            }
+        }
+    }
+}
+
+.HamburgerMenu {
+    display: none;
+    position: relative;
+    top: -35%;
+    transition: all 0.3s ease-in;
+    width: 100%;
+
+    @include tablayout {
+        display: block;
+    }
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        list-style: none;
+        height: max-content;
+        background-color: $secondaycolor;
+        color: white;
+        padding: 0.43em 0.33em;
+
+
+
+        li {
+            padding: 0.43em 0.56em;
+
+            @include tablayout {
+                padding: 0.33em 0.46em;
+            }
+
+            @include breakdownpoint {
+                padding: 0.23em 0.36em;
+            }
+
+            @include mobile {
+                padding: 0.13em 0.26em;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 0.43em 0.56em;
+                cursor: pointer;
+
+                @include tablayout {
+                    padding: 0.33em 0.46em;
+                }
+
+                @include breakdownpoint {
+                    padding: 0.23em 0.36em;
+                }
+
+                @include mobile {
+                    padding: 0.13em 0.26em;
+                    font-size: 12px;
+                }
+
+            }
+
+            &:hover {
+                border-bottom: 2px solid $primarycolor;
+            }
+        }
+    }
+}
+
+.show {
+    display: block;
+    top: 10%;
+}
+
+.hide {
+    top: -35%;
+    display: none;
+}
+
+#devLogo {
+    @include tablayout {
+        font-size: 40px
+    }
+
+    @include breakdownpoint {
+        font-size: 37px;
+    }
+
+    @include mobile {
+        font-size: 33px;
+    }
+}
+
+.fadeInRight {
+    animation-name: none !important;
+}
+
+.SideFadeIn {
+    animation-name: fadeInRight !important;
+}

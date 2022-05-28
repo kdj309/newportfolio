@@ -1,0 +1,133 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.Contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.54em 0.43em;
+    gap: 15px;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @include tablayout {
+        flex-direction: column;
+    }
+
+    .imgcontainer {
+        flex: 0.5;
+        width: 300px;
+        height: 300px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .form-container {
+        flex: 0.4;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 15px;
+
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            background: #dcebff;
+            padding: 0.53em 0.88em;
+            border: 2px solid #004aa9;
+
+            input {
+                margin-left: 6px;
+                padding: 0.45em 0.63em;
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 20px;
+                background: lighten($color: $secondaycolor, $amount: 60);
+
+                @include breakdownpoint {
+                    font-size: 16px;
+                    padding: 0.35em 0.43em;
+
+                }
+
+                @include mobile {
+                    font-size: 12px;
+                    padding: 0.25em 0.33em;
+
+                }
+            }
+
+            input:focus+label {
+                color: $secondaycolor;
+            }
+
+
+
+            textarea {
+                padding: 0.45em 0.63em;
+                margin-left: 6px;
+                background: lighten($color: $secondaycolor, $amount: 60);
+                border: none;
+                font-size: 20px;
+
+                @include breakdownpoint {
+                    font-size: 16px;
+                    padding: 0.35em 0.43em;
+
+                }
+
+                @include mobile {
+                    font-size: 12px;
+                    padding: 0.25em 0.33em;
+
+                }
+            }
+
+            textarea:focus+label {
+                color: $secondaycolor;
+            }
+        }
+
+
+
+        button {
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: rgba(48, 68, 247, 0.6) 0px 5px 10px;
+            font-family: Nunito, sans-serif;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            outline: none;
+            border-radius: 5px;
+            padding: 13px 25px;
+            background: $secondaycolor;
+            transition: all 0.3s ease 0s;
+            width: max-content;
+            align-self: flex-end;
+        }
+    }
+}
+
+label {
+    order: -1;
+}
+
+#chaticon {
+    align-self: flex-start;
+}
+
+textarea:focus-visible {
+    border: none !important;
+    outline: none !important;
+}

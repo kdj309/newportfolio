@@ -1,0 +1,92 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.Intro-container {
+    background-image: url('./../../Assets/introbg.jpg'), linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-position: 0px 0px, 100% 150%, 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    .Shadowbg {
+        width: 100%;
+        transition: all 500ms ease-in;
+    }
+
+    .overlayEffect {
+        width: 100%;
+        position: absolute;
+        background-image: url('../../Assets/overlay.png');
+        background-position: left, right;
+        /* background-position: 100% 100%; */
+        background-repeat: repeat, repeat-x, no-repeat;
+        top: 0;
+        height: 100%;
+        opacity: 0.7;
+        z-index: -1;
+    }
+}
+
+.active {
+    top: calc(100% - 12rem) !important;
+}
+
+#scrolltop {
+    position: fixed;
+    top: -140%;
+    right: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: 1s linear;
+    z-index: 1000;
+
+    @include tablayout {
+        right: 1.8rem;
+        padding: 0.8rem 1.3rem;
+    }
+
+    @include breakdownpoint {
+        right: 1.6rem;
+        padding: 0.6rem 1.1rem;
+    }
+
+    @include mobile {
+        right: 0.2rem;
+        padding: 0.4rem 0.9rem;
+    }
+}
+
+#SkillSection {
+    @include tablayout {
+        height: max-content !important;
+        padding: 0.43em 0.53em;
+    }
+
+    &>div {
+        @include tablayout {
+            flex-direction: column;
+            justify-content: space-between;
+            height: max-content;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+}
+
+.BodyWrapper {
+    @include mobile {
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
+.fadeInDown {
+    @include mobile {
+        animation-name: fadeIn !important;
+    }
+}

@@ -1,0 +1,12 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.parentDiv {
+    border: 1px solid #b8bfda;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+}
+
+.QuestionItem {
+    font-size: 24px !important;
+}

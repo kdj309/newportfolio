@@ -1,0 +1,244 @@
+@import 'global.scss';
+
+//!tablayout media query
+@mixin tablayout {
+    @media screen and (max-width:768px) {
+        @content
+    }
+}
+
+;
+
+//! breakdownpoint media query
+@mixin breakdownpoint {
+    @media (max-width:660px) and (min-width:425px) {
+        @content
+    }
+}
+
+;
+//! laptopbreakdownpoint media query
+
+@mixin laptopbreakdownpoint {
+    @media (max-width:1024px) and (min-width:768px) {
+        @content
+    }
+}
+
+;
+
+//! mobile media quey
+@mixin mobile {
+    @media (max-width:425px) {
+        @content
+    }
+}
+
+;
+
+//! layout breakdown at larger size
+@mixin biglaptopbreakdownpoint {
+    @media (max-width:1380px) and (min-width:1024px) {
+        @content
+    }
+}
+
+;
+//! utility class creation using each loop of scss
+$nums: 1, 2, 3, 4, 5;
+
+@each $size in $nums {
+    .m-#{$size} {
+        margin: #{$size}rem;
+
+        //! diffrend values depending on layout size
+        @include breakdownpoint {
+            margin: calc(#{$size}rem/2);
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            margin: calc(#{$size}rem/4);
+        }
+    }
+
+    .p-#{$size} {
+        padding: #{$size}rem;
+        //! diffrend values depending on layout size
+
+        @include breakdownpoint {
+            padding: calc(#{$size}rem/2);
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            padding: calc(#{$size}rem/4);
+        }
+    }
+
+    .my-#{$size} {
+        margin-top: #{$size}rem !important;
+        margin-bottom: #{$size}rem !important;
+        //! diffrend values depending on layout size
+
+        @include breakdownpoint {
+            margin-top: calc(#{$size}rem/2) !important;
+            margin-bottom: calc(#{$size}rem/2) !important;
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            margin-top: calc(#{$size}rem/4) !important;
+            margin-bottom: calc(#{$size}rem/4) !important;
+        }
+    }
+
+    .mx-#{$size} {
+        margin-left: #{$size}rem !important;
+        margin-right: #{$size}rem !important;
+        //! diffrend values depending on layout size
+
+        @include breakdownpoint {
+            margin-left: calc(#{$size}rem/2) !important;
+            margin-right: calc(#{$size}rem/2) !important;
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            margin-left: calc(#{$size}rem/4) !important;
+            margin-right: calc(#{$size}rem/4) !important;
+        }
+    }
+
+    .py-#{$size} {
+        padding-top: #{$size}rem;
+        padding-bottom: #{$size}rem;
+        //! diffrend values depending on layout size
+
+        @include breakdownpoint {
+            padding-top: calc(#{$size}rem/2) !important;
+            padding-bottom: calc(#{$size}rem/2) !important;
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            padding-top: calc(#{$size}rem/4) !important;
+            padding-bottom: calc(#{$size}rem/4) !important;
+        }
+    }
+
+    .py-#{$size} {
+        padding-left: #{$size}rem !important;
+        padding-right: #{$size}rem !important;
+        //! diffrend values depending on layout size
+
+        @include breakdownpoint {
+            padding-left: calc(#{$size}rem/2) !important;
+            padding-right: calc(#{$size}rem/2) !important;
+        }
+
+        //! diffrend values depending on layout size
+
+        @include mobile {
+            padding-left: calc(#{$size}rem/4) !important;
+            padding-right: calc(#{$size}rem/4) !important;
+        }
+    }
+}
+
+
+
+
+
+//!basic utility classes
+.text-center {
+    text-align: center;
+}
+
+.h2 {
+    font-size: 35px;
+
+    @include breakdownpoint {
+        font-size: 28px;
+    }
+
+    @include mobile {
+        font-size: 23px;
+    }
+}
+
+.bgprimary {
+    background-color: $primarycolor;
+}
+
+.bgSecondary {
+    background-color: $secondaycolor;
+}
+
+.HeadingColor {
+    color: $secondaycolor;
+}
+
+.text-primary {
+    color: $primarycolor;
+}
+
+.text-light {
+    color: white;
+}
+
+.text-small {
+    color: gray;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexCenterDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 0.45em 0.67em;
+
+    @include tablayout {
+        width: 90%;
+    }
+
+    @include mobile {
+        padding: 0.35em 0.57em;
+    }
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 0.43em 0.56em;
+    text-align: center;
+    cursor: pointer;
+
+    @include tablayout {
+        padding: 0.38em 0.51em;
+    }
+
+    @include breakdownpoint {
+        padding: 0.33em 0.46em;
+    }
+}

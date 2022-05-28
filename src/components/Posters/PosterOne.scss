@@ -1,0 +1,47 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.PosterOne-Container {
+    background-color: $secondaycolor;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    div {
+        width: 30%;
+
+        @include tablayout {
+            width: 80%;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin-top: 10px;
+            font-size: 54px;
+            line-height: 1.05;
+            text-align: center;
+
+            @include laptopbreakdownpoint {
+                font-size: 43px;
+                line-height: 1.01;
+            }
+
+            @include tablayout {
+                font-size: 43px;
+                line-height: 1.01;
+            }
+
+            ;
+
+            @include breakdownpoint {
+                font-size: 38px;
+            }
+
+            @include mobile {
+                font-size: 33px;
+            }
+        }
+    }
+}

@@ -1,0 +1,271 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.FooterWrapperContainer {
+    background-color: $secondaycolor;
+    height: max-content;
+}
+
+.footerMaincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+
+    @include breakdownpoint {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .FooterIntro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+
+
+
+        h2 {
+            @include tablayout {
+                font-size: 18px;
+            }
+
+            @include breakdownpoint {
+                font-size: 14px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+
+        p,
+        q,
+        h4 {
+            @include breakdownpoint {
+                font-size: 14px;
+            }
+        }
+
+        p,
+        q,
+        h4 {
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+
+        h3 {
+            color: lighten($color: $primarycolor, $amount: 10)
+        }
+    }
+
+    .FooterLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+
+        h2 {
+            @include tablayout {
+                font-size: 18px;
+            }
+
+            @include breakdownpoint {
+                font-size: 14px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+
+
+
+        .quickLinks {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: space-between;
+
+            @include breakdownpoint {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            li>a {
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+
+                @include tablayout {
+                    font-size: 12px;
+                }
+
+                @include breakdownpoint {
+                    font-size: 10px;
+                }
+
+                @include mobile {
+                    font-size: 8px;
+                }
+
+            }
+
+            li>a:hover {
+                border-bottom: 2px solid $primarycolor;
+
+            }
+
+            ;
+        }
+    }
+
+    .FooterPersonaldetails {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+
+        h2 {
+            @include tablayout {
+                font-size: 18px;
+            }
+
+            @include breakdownpoint {
+                font-size: 14px;
+            }
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .iconcontainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.43em 0.36em;
+            gap: 8px;
+
+            a,
+            p {
+                @include tablayout {
+                    font-size: 12px;
+                }
+
+                @include breakdownpoint {
+                    font-size: 10px;
+                }
+
+                @include mobile {
+                    font-size: 8px;
+                }
+            }
+        }
+
+        .socialMediaQuickLinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5;
+
+            @include breakdownpoint {
+                justify-content: space-evenly;
+            }
+
+            div>a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a {
+                border-radius: 50%;
+                text-decoration: none;
+                color: $secondaycolor;
+                background-color: white;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+
+                @include tablayout {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                @include breakdownpoint {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                @include mobile {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            a:hover {
+                color: $primarycolor;
+            }
+        }
+    }
+}
+
+.socialMediaIcons,
+.PersonaldetailsIcons {
+
+    font-size: 1.6em !important;
+    margin-top: 4px !important;
+
+    @include tablayout {
+        font-size: 1.4em !important;
+    }
+
+    @include breakdownpoint {
+        font-size: 1.2em !important;
+    }
+
+    @include mobile {
+        font-size: 1em !important;
+    }
+}
+
+.animateText {
+    animation: bounce 700ms ease-in infinite forwards;
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.hrtag {
+    width: 80%;
+    margin: auto;
+
+    @include breakdownpoint {
+        width: 90%;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
+}

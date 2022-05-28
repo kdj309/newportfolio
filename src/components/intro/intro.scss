@@ -1,0 +1,97 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.inrto-main {
+    width: 400px;
+    margin: auto;
+    height: 550px;
+    padding: 0.56em 0.96em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablayout {
+        padding: 0.46em 0.76em;
+    }
+
+    @include breakdownpoint {
+        padding: 0.36em 0.56em;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 0.26em 0.46em;
+    }
+
+    .text-content {
+        h2 {
+            margin-top: 0px;
+            color: #fff;
+            font-size: 66px;
+            line-height: 1.05;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @include tablayout {
+                font-size: 43px;
+                line-height: 1.01;
+            }
+
+            @include breakdownpoint {
+                font-size: 38px;
+                line-height: 1;
+            }
+
+            @include mobile {
+                font-size: 20px;
+                line-height: 0.8;
+            }
+
+            span {
+                color: $primarycolor;
+                font-size: 30px;
+                font-style: italic;
+                line-height: 1.0;
+
+                @include tablayout {
+                    font-size: 43px;
+                    line-height: 1.01;
+                }
+
+                @include breakdownpoint {
+                    font-size: 38px;
+                    line-height: 1;
+                }
+
+                @include mobile {
+                    font-size: 20px;
+                    line-height: 0.8;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+#downarrow {
+    position: relative;
+    top: 22px;
+    left: 90%;
+    border-radius: 50%;
+    color: $primarycolor;
+    border: none;
+    outline: none;
+
+    @include breakdownpoint {
+        left: 85%;
+        font-size: 30px;
+    }
+
+    @include mobile {
+        left: 75%;
+        font-size: 13px;
+    }
+
+}

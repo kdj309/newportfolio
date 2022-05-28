@@ -1,0 +1,157 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.AboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-top: 3rem !important;
+
+    @include tablayout {
+        flex-direction: column;
+    }
+
+    .AccordianMain-Container {
+        flex: 0.5;
+        color: $secondaycolor;
+
+        h2 {
+            text-align: center;
+            font-size: 38px;
+
+            @include tablayout {
+                font-size: 30px;
+            }
+
+            @include breakdownpoint {
+                font-size: 25px;
+            }
+
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+
+
+
+        .accordiandiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 10px 5px;
+
+            .accordianitem {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .questiondiv {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.45em 0.56em;
+                    align-items: center;
+
+                    @include tablayout {
+                        padding: 0.35em 0.46em;
+                    }
+
+                    @include breakdownpoint {
+                        padding: 0.30em 0.40em;
+                    }
+
+                    @include mobile {
+                        padding: 0.22em 0.32em;
+                    }
+
+                    .question {
+
+                        font-size: 34px;
+                        font-weight: 600;
+
+                        @include tablayout {
+                            font-size: 28px;
+                        }
+
+                        @include breakdownpoint {
+                            font-size: 22px;
+                        }
+
+                        @include mobile {
+                            font-size: 20px;
+                        }
+                    }
+
+                    button {
+                        outline: none;
+                        border: none;
+                    }
+                }
+
+                .text-div {
+                    padding: 0.45em 0.56em;
+                    text-overflow: ellipsis;
+
+                    @include tablayout {
+                        padding: 0.35em 0.46em;
+                    }
+
+                    @include breakdownpoint {
+                        padding: 0.30em 0.41em;
+                    }
+
+                    @include mobile {
+                        padding: 0.25em 0.36em;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: gray;
+
+                        @include tablayout {
+                            font-size: 14px;
+                        }
+
+                        @include breakdownpoint {
+                            font-size: 12px;
+                        }
+
+                        @include mobile {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-div {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+            max-width: 85%;
+            object-fit: cover;
+            transition: all 300ms ease-in;
+            border-radius: 5%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+            filter: grayscale(80%);
+
+            @include tablayout {
+                margin: auto;
+            }
+
+        }
+
+        img:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            transform: scale(0.9);
+            mix-blend-mode: normal;
+            filter: none;
+        }
+    }
+}

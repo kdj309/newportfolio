@@ -1,0 +1,202 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.SocialMedia-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @include laptopbreakdownpoint {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @include breakdownpoint {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    @include mobile {
+        flex-direction: column !important;
+    }
+
+    h3 {
+        font-size: 31px;
+        font-weight: 600;
+
+        @include breakdownpoint {
+            font-size: 25px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+
+        span {
+            color: $secondaycolor
+        }
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        @include tablayout {
+            flex-direction: row;
+            gap: 13px
+        }
+
+        @include breakdownpoint {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 12px;
+        }
+
+        @include mobile {
+            flex-direction: column !important;
+            gap: 20px;
+
+        }
+
+        .dashboarditem {
+            width: 250px;
+            height: 250px;
+            border-radius: 5%;
+            border: 1px solid $secondaycolor;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+            padding: 0.43em 0.56em;
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+
+            @include tablayout {
+                width: 175px;
+                height: 195px;
+            }
+
+            @include breakdownpoint {
+                width: 160px;
+                height: 180px;
+            }
+        }
+
+
+
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+    }
+}
+
+.hoverwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 100ms ease-in-out;
+
+    .linkedinhover {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 58px;
+        height: 58px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+        background-image: url("../../Assets/linkedinlogo.png");
+        background-position: 50% 50%;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        top: 48%;
+        left: 44%
+    }
+}
+
+.githubhover {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url("../../Assets/githublogo.png");
+    background-position: 50% 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    top: 48%;
+    left: 44%
+}
+
+.twitterinhover {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url("../../Assets/twitterlogo.png");
+    background-position: 50% 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    top: 48%;
+    left: 44%
+}
+
+.dashboarditem:hover .image {
+    opacity: 0.2;
+    border: none;
+}
+
+.dashboarditem:hover .hoverwrapper {
+    border: none;
+    opacity: 1;
+}

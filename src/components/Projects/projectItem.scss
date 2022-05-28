@@ -1,0 +1,138 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+.MaincardItem {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+
+    width: 280px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5%;
+
+    @include breakdownpoint {
+        width: 250px;
+        height: 270px;
+    }
+
+    @include biglaptopbreakdownpoint {
+        width: 260px;
+        height: 270px;
+    }
+
+
+
+}
+
+.card__image {
+    width: 280px;
+    min-height: 270px;
+
+    @include breakdownpoint {
+        width: 250px;
+        height: 270px;
+    }
+
+    @include biglaptopbreakdownpoint {
+        width: 260px;
+        height: 270px;
+    }
+
+    object-fit: cover;
+    border-radius: 5%;
+
+}
+
+
+
+.overlay {
+    width: 280px;
+
+
+
+    height: max-content;
+    text-align: center;
+    transform: translateY(-58px);
+    transition: all 400ms ease-in;
+
+    @include breakdownpoint {
+        width: 250px;
+        transform: translateY(-39px);
+    }
+
+    @include biglaptopbreakdownpoint {
+        width: 260px;
+        transform: translateY(-38px);
+    }
+}
+
+.card:hover+.overlay {
+
+    .visibilityCls {
+        visibility: visible;
+    }
+
+    // .btn-container:only-child {
+    //     pointer-events: auto;
+    // }
+
+    visibility: visible !important;
+    transform: translateY(-132px) !important;
+
+    @include breakdownpoint {
+        transform: translateY(-113px) !important;
+    }
+
+    @include biglaptopbreakdownpoint {
+        transform: translateY(-113px) !important;
+    }
+}
+
+.overlay>h3 {
+    visibility: visible;
+    background-color: white;
+    color: #004aa9;
+    padding: 0.43em 0.65em;
+    pointer-events: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0.56em 0.67em;
+    color: black;
+    background-color: white;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.btn-container {
+    background: white;
+    display: flex;
+    padding: 1.14em 0.56em;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+        background-color: #fff;
+        color: $secondaycolor;
+        text-decoration: none;
+        border: 1px solid $secondaycolor;
+        border-radius: 11px;
+    }
+
+}
+
+
+
+.visibilityCls {
+    visibility: hidden;
+    pointer-events: none;
+}

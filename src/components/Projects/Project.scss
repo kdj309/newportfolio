@@ -1,0 +1,58 @@
+@import 'src/global.scss';
+@import 'src/utilities.scss';
+
+
+.ProjectMainContainer {
+    h3 {
+        text-align: center;
+        color: $secondaycolor;
+    }
+
+    .Project-Section {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.43em 0.36em;
+        top: 280px;
+        gap: 8px;
+        z-index: 1;
+
+        @include laptopbreakdownpoint {
+            position: unset;
+            top: unset;
+            flex-wrap: wrap;
+        }
+
+        @include tablayout {
+            position: unset;
+            top: unset;
+            flex-wrap: wrap;
+        }
+
+        @include mobile {
+            width: max-content;
+            margin: auto;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        @include biglaptopbreakdownpoint {
+            width: 95%;
+        }
+    }
+
+    .Project-Background {
+        @include laptopbreakdownpoint {
+            display: none;
+        }
+
+        @include tablayout {
+            display: none;
+        }
+
+        height: 300px;
+        background-color: $secondaycolor;
+    }
+}
