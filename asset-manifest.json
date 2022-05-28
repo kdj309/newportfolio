@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newportfolio/static/css/main.9dc96497.css",
+    "main.js": "/newportfolio/static/js/main.787235f2.js",
+    "static/media/contactimg.jpg": "/newportfolio/static/media/contactimg.13b798d6ec4d62e3e4d2.jpg",
+    "static/media/project1.jpg": "/newportfolio/static/media/project1.1f457c3bb98684339116.jpg",
+    "static/media/introbg.jpg": "/newportfolio/static/media/introbg.56745ab18716c2fd06d6.jpg",
+    "static/media/project2.jpg": "/newportfolio/static/media/project2.541971dc9e57b065814b.jpg",
+    "static/media/Kartikjoshiresume.pdf": "/newportfolio/static/media/Kartikjoshiresume.c303a7131c6e491444b6.pdf",
+    "static/media/githubprofile.jpeg": "/newportfolio/static/media/githubprofile.109a22b684b5c9a57457.jpeg",
+    "static/media/twitterProfile.jpeg": "/newportfolio/static/media/twitterProfile.9ef39a1f0415ff98a4d1.jpeg",
+    "static/media/project3.jpg": "/newportfolio/static/media/project3.69c704a0143c1accc41a.jpg",
+    "static/media/Linkedinprofile.jpeg": "/newportfolio/static/media/Linkedinprofile.55644d444d23debb17db.jpeg",
+    "static/media/profilepic.jpeg": "/newportfolio/static/media/profilepic.1d2a774501f948461150.jpeg",
+    "index.html": "/newportfolio/index.html",
+    "main.9dc96497.css.map": "/newportfolio/static/css/main.9dc96497.css.map",
+    "main.787235f2.js.map": "/newportfolio/static/js/main.787235f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dc96497.css",
+    "static/js/main.787235f2.js"
+  ]
+}
