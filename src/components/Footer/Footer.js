@@ -33,7 +33,7 @@ export default function Footer() {
                     <h2>Contact Info</h2>
                     <div className='iconcontainer'><PhoneIcon className="PersonaldetailsIcons" /><a href="tel:+919972564763">9972564763</a></div>
                     <div className='iconcontainer'><EmailIcon className="PersonaldetailsIcons" /><a href="mailto:karthik.joshi103@gmail.com">karthik.joshi103@gmail.com</a></div>
-                    <div className='iconcontainer'><LocationCityIcon className="PersonaldetailsIcons" /><p> Gulbarga,Karnataka-585102</p></div>
+                    <div className='iconcontainer'><LocationCityIcon className="PersonaldetailsIcons" /><p> Bangalore,Karnataka-560102</p></div>
                     <div className="socialMediaQuickLinks">
                         <a href='https://www.linkedin.com/in/karthik-joshi-5885701a2/'><LinkedInIcon className="socialMediaIcons" /> </a>
                         <a href='https://github.com/kdj309'> <GitHubIcon className="socialMediaIcons" /></a>

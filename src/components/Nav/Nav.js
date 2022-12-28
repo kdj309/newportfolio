@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Nav.scss'
 import { SiDevpost } from "react-icons/si";
-import resume from '../../Assets/Kartikjoshiresume.pdf'
+import resume from '../../Assets/Kartik_26_12_22.pdf'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import ScrollAnimation from 'react-animate-on-scroll';
