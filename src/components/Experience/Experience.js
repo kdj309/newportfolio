@@ -65,7 +65,7 @@ export default function Experience() {
         </div>
         <div className="mobileContainerItem Content mx-2">
           <h3>PERSISTENT SYSTEMS</h3>
-          <h5>SOFTWARE ENGINEER</h5>
+          <h5>SENIOR SOFTWARE ENGINEER</h5>
           <p>FEB 2022 - CURRENT</p>
         </div>
       </ScrollAnimation>
