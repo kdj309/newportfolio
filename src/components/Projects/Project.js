@@ -14,6 +14,7 @@ export default function Project() {
       gitrepo: "https://github.com/kdj309/Linkedin-clone",
       alterstyle: false,
       projectImg: projimg1,
+      isActive: false
     },
     {
       projectName: "Online Notes",
@@ -22,6 +23,7 @@ export default function Project() {
       gitrepo: "https://github.com/kdj309/notescllient",
       projectImg: projimg2,
       alterstyle: false,
+      isActive: false
     },
     {
       projectName: "Weather Web App",
@@ -30,6 +32,7 @@ export default function Project() {
       gitrepo: "https://github.com/kdj309/weatherinfo",
       alterstyle: false,
       projectImg: projimg3,
+      isActive: false
     },
     {
       projectName: "E-Commerce Web App",
@@ -38,6 +41,7 @@ export default function Project() {
       gitrepo: "https://github.com/kdj309/e-commerce-frontend",
       alterstyle: false,
       projectImg: projimg4,
+      isActive:true
     },
   ];
   return (
@@ -51,6 +55,7 @@ export default function Project() {
             projectLink={proj.projectLink}
             projectimg={proj.projectImg}
             alterstyle={proj.alterstyle}
+            isActive={proj.isActive}
             gitrepo={proj.gitrepo}
           />
         ))}
