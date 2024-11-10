@@ -41,7 +41,7 @@ export default function Project() {
       gitrepo: "https://github.com/kdj309/e-commerce-frontend",
       alterstyle: false,
       projectImg: projimg4,
-      isActive:true
+      isActive: true
     },
   ];
   return (
