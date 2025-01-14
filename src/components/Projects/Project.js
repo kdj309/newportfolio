@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.scss";
 import projimg1 from "../../Assets/project1.jpg";
 import projimg2 from "../../Assets/project2.jpg";
-import projimg3 from "../../Assets/logo_light.png";
+import projimg3 from "../../Assets/logo_dark.png";
 import projimg4 from "../../Assets/project4.jpg";
 import Projectitem from "./Projectitem";
 export default function Project() {
@@ -27,7 +27,7 @@ export default function Project() {
     },
     {
       projectName: "Let's Code",
-      projectDesc: `A LeetCode-inspired platform with features like problem sorting, searching, filtering, submission tracking, and resizable code editor`,
+      projectDesc: `A LeetCode-inspired platform with features like problem sorting, searching, and filtering.`,
       projectLink: "https://leetcode-clone-liard.vercel.app/",
       gitrepo: "https://github.com/kdj309/leetcode-clone",
       alterstyle: false,
