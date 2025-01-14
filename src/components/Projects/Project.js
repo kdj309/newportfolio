@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.scss";
 import projimg1 from "../../Assets/project1.jpg";
 import projimg2 from "../../Assets/project2.jpg";
-import projimg3 from "../../Assets/logo_dark.png";
+import projimg3 from "../../Assets/leetcodelogo.png";
 import projimg4 from "../../Assets/project4.jpg";
 import Projectitem from "./Projectitem";
 export default function Project() {
