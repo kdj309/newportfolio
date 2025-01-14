@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.scss";
 import projimg1 from "../../Assets/project1.jpg";
 import projimg2 from "../../Assets/project2.jpg";
-import projimg3 from "../../Assets/project3.jpg";
+import projimg3 from "../../Assets/logo_light.png";
 import projimg4 from "../../Assets/project4.jpg";
 import Projectitem from "./Projectitem";
 export default function Project() {
@@ -26,13 +26,13 @@ export default function Project() {
       isActive: false
     },
     {
-      projectName: "Weather Web App",
-      projectDesc: `web tool to gather weather information like week forecast and cities weather information`,
-      projectLink: "https://weatherwikipedia.netlify.app/",
-      gitrepo: "https://github.com/kdj309/weatherinfo",
+      projectName: "Let's Code",
+      projectDesc: `A LeetCode-inspired platform with features like problem sorting, searching, filtering, submission tracking, and resizable code editor`,
+      projectLink: "https://leetcode-clone-liard.vercel.app/",
+      gitrepo: "https://github.com/kdj309/leetcode-clone",
       alterstyle: false,
       projectImg: projimg3,
-      isActive: false
+      isActive: true
     },
     {
       projectName: "E-Commerce Web App",
