@@ -27,7 +27,7 @@ export default function Project() {
     },
     {
       projectName: "Let's Code",
-      projectDesc: `A LeetCode-inspired platform with features like problem sorting, searching, and filtering.`,
+      projectDesc: `A LeetCode-inspired platform with features like problem solving, searching, and filtering.`,
       projectLink: "https://leetcode-clone-liard.vercel.app/",
       gitrepo: "https://github.com/kdj309/leetcode-clone",
       alterstyle: false,
